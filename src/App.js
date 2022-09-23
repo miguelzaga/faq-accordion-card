@@ -30,18 +30,20 @@ function App() {
   ];
 
   return (
-    <main>
-      <section>
-        <img src="" alt="" />
-        <div>
-          <h2>FAQ</h2>
-          <ul>
+    <main className="card__wrapper">
+      <section className="card">
+        <img className="card__img" src="" alt="" />
+        <div className="card__container">
+          <h2 className="card__title">FAQ</h2>
+          <ul className="card__list">
             {questions.map(function (question, index) {
               return (
-                <li key={index}>
-                  <details>
-                    <summary>{question.title}</summary>
-                    <p>{question.answer}</p>
+                <li key={index} className="card__list-li">
+                  <details className="question">
+                    <summary className="question__title">
+                      {question.title}
+                    </summary>
+                    <p className="question__answer">{question.answer}</p>
                   </details>
                 </li>
               );
