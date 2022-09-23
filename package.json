@@ -1,0 +1,33 @@
+{
+  "name": "faq-accordion-card",
+  "version": "1.0.0",
+  "description": "This is a solution to the FAQ accordion card challenge on Frontend Mentor",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelzaga/faq-accordion-card.git"
+  },
+  "author": "Miguel Zapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelzaga/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/miguelzaga/faq-accordion-card#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  }
+}
+
