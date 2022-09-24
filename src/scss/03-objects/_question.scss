@@ -1,0 +1,16 @@
+@use "./../01-abstracts/" as *;
+
+.question {
+  padding-bottom: 19px;
+
+  &__title {
+    color: $grey-gun;
+  }
+
+  &[open] {
+    & .question__title {
+      color: $blue-midnight;
+      font-weight: 700;
+    }
+  }
+}
