@@ -4,10 +4,22 @@
 	margin-top: 17px;
   padding-bottom: 16px;
   border-bottom: 1px solid $grey-athens;
+  position: relative;
 
   &__title {
     color: $grey-gun;
       line-height: 16px;
+
+      &::marker {
+	      content: none;
+      }
+
+      &::after {
+	      content: url("/src/assets/images/icon-arrow-down.svg");
+	      margin-left: auto;
+	      position: absolute;
+	      right: 0;
+      }
   }
 
   &__answer {
@@ -18,6 +30,10 @@
     &__title {
       color: $blue-midnight;
       font-weight: 700;
+
+      &::after {
+	      transform: rotate(180deg);
+      }
     }
   }
 }
