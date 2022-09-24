@@ -1,14 +1,21 @@
 @use "./../01-abstracts/" as *;
 
 .question {
-  padding-bottom: 19px;
+	margin-top: 17px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $grey-athens;
 
   &__title {
     color: $grey-gun;
+      line-height: 16px;
   }
 
-  &[open] {
-    & .question__title {
+  &__answer {
+	  margin-top: 12px;
+  }
+
+  &[open] .question {
+    &__title {
       color: $blue-midnight;
       font-weight: 700;
     }
