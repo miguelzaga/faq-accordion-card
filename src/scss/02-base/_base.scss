@@ -1,1 +1,7 @@
 @use "./../01-abstracts/" as *;
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
