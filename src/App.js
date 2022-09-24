@@ -34,7 +34,7 @@ function App() {
       <section className="card">
         <img className="card__img" src="" alt="" />
         <div className="card__container">
-          <h2 className="card__title">FAQ</h2>
+          <h1 className="card__title">FAQ</h1>
           <ul className="card__list">
             {questions.map(function (question, index) {
               return (

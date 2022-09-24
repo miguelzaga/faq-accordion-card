@@ -1,1 +1,16 @@
 @use "./../01-abstracts/" as *;
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: $grey-storm;
+  font-weight: 400;
+  font-size: rem(12px);
+  line-height: 1.5;
+}
+
+h1 {
+  color: $blue-midnight;
+  font-weight: 700;
+  font-size: rem(32px);
+  line-height: 40px;
+}

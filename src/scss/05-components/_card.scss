@@ -1,1 +1,13 @@
 @use "./../01-abstracts/" as *;
+
+.card {
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 23px;
+  padding: 132px 24px 48px;
+
+  &__wrapper {
+    padding: 40px 24px;
+  }
+}
