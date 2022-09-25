@@ -1,29 +1,30 @@
 @use "./../01-abstracts/" as *;
 
 .question {
-	margin-top: 17px;
+  margin-top: 17px;
   padding-bottom: 16px;
   border-bottom: 1px solid $grey-athens;
   position: relative;
 
   &__title {
     color: $grey-gun;
-      line-height: 16px;
+    line-height: 16px;
 
-      &::marker {
-	      content: none;
-      }
+    &::marker {
+      content: none;
+    }
 
-      &::after {
-	      content: url("/src/assets/images/icon-arrow-down.svg");
-	      margin-left: auto;
-	      position: absolute;
-	      right: 0;
-      }
+    &::after {
+      content: url("/src/assets/images/icon-arrow-down.svg");
+      margin-left: auto;
+      position: absolute;
+      right: 0;
+    }
   }
 
   &__answer {
-	  margin-top: 12px;
+    margin-top: 12px;
+    max-width: 95%;
   }
 
   &[open] .question {
@@ -32,7 +33,7 @@
       font-weight: 700;
 
       &::after {
-	      transform: rotate(180deg);
+        transform: rotate(180deg);
       }
     }
   }
