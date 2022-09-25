@@ -1,7 +1,7 @@
 @use "./../01-abstracts/" as *;
 
 .card {
-  max-width: 920px;
+  max-width: 500px;
   margin: 0 auto;
   background-color: white;
   border-radius: 23px;
@@ -9,6 +9,23 @@
 
   &__wrapper {
     padding: 148px 24px 85px;
+  }
+
+  &__picture {
+    position: relative;
+    top: -240px;
+    max-width: 237px;
+    margin: auto;
+  }
+
+  &__bg-pattern {
+    position: absolute;
+    top: 108px;
+  }
+
+  &__illustration {
+    position: absolute;
+    top: 0;
   }
 
   &__title {

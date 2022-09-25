@@ -1,4 +1,6 @@
 import { useState } from "react";
+import bgPatternMobile from "./assets/images/bg-pattern-mobile.svg";
+import illustrationWomanMobile from "./assets/images/illustration-woman-online-mobile.svg";
 
 function App() {
   var questions = [
@@ -32,7 +34,14 @@ function App() {
   return (
     <main className="card__wrapper">
       <section className="card">
-        <img className="card__img" src="" alt="" />
+        <picture className="card__picture">
+          <img className="card__bg-pattern" src={bgPatternMobile} alt="" />
+          <img
+            className="card__illustration"
+            src={illustrationWomanMobile}
+            alt=""
+          />
+        </picture>
         <div className="card__container">
           <h1 className="card__title">FAQ</h1>
           <ul className="card__list">
