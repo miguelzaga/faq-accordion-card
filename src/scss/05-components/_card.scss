@@ -6,9 +6,15 @@
   background-color: white;
   border-radius: 23px;
   padding: 132px 24px 48px;
+  @include breakpoint($lg) {
+    max-width: 920px;
+  }
 
   &__wrapper {
     padding: 148px 24px 85px;
+    @include breakpoint($lg) {
+      padding: 130px 24px;
+    }
   }
 
   &__picture {
