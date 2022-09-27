@@ -22,6 +22,20 @@
     top: -240px;
     max-width: 237px;
     margin: auto;
+
+    &--desktop {
+      display: none;
+    }
+
+    @include breakpoint($lg) {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+      }
+    }
   }
 
   &__bg-pattern {
