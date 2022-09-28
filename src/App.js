@@ -37,23 +37,33 @@ function App() {
   return (
     <main className="card__wrapper">
       <section className="card">
-        <picture className="card__picture card__picture--mobile">
-          <img className="card__bg-pattern" src={bgPatternMobile} alt="" />
-          <img
-            className="card__illustration"
-            src={illustrationWomanMobile}
-            alt="Illustration of a woman using a computer"
-          />
-        </picture>
-        <picture className="card__picture card__picture--desktop">
-          <img className="" src={bgPatternDesktop} alt="" />
-          <img
-            className=""
-            src={illustrationWomanDesktop}
-            alt="Illustration of a woman using a computer"
-          />
-          <img className="" src={illustrationBoxDesktop} alt="" />
-        </picture>
+        <div className="card__bg">
+          <picture className="card__picture card__picture--mobile">
+            <img className="card__bg-pattern" src={bgPatternMobile} alt="" />
+            <img
+              className="card__illustration"
+              src={illustrationWomanMobile}
+              alt="Illustration of a woman using a computer"
+            />
+          </picture>
+          <picture className="card__picture card__picture--desktop">
+            <img
+              className="card__bg-pattern card__bg-pattern--desktop"
+              src={bgPatternDesktop}
+              alt=""
+            />
+            <img
+              className="card__illustration card__illustration--desktop"
+              src={illustrationWomanDesktop}
+              alt="Illustration of a woman using a computer"
+            />
+            <img
+              className="card__illustration-box"
+              src={illustrationBoxDesktop}
+              alt="Illustration of a box"
+            />
+          </picture>
+        </div>
         <div className="card__container">
           <h1 className="card__title">FAQ</h1>
           <ul className="card__list">

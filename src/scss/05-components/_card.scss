@@ -8,6 +8,7 @@
   padding: 132px 24px 48px;
   @include breakpoint($lg) {
     max-width: 920px;
+    padding: 65px 95px 83px 0;
   }
 
   &__wrapper {
@@ -28,6 +29,10 @@
     }
 
     @include breakpoint($lg) {
+      top: 0;
+      max-width: 964px;
+      width: 964px;
+
       &--mobile {
         display: none;
       }
@@ -41,15 +46,40 @@
   &__bg-pattern {
     position: absolute;
     top: 108px;
+
+    &--desktop {
+      top: 0;
+    }
   }
 
   &__illustration {
     position: absolute;
     top: 0;
+    max-width: 427px;
+
+    &--desktop {
+    }
+  }
+
+  &__illustration-box {
+    position: absolute;
+    top: 0;
+    max-width: 90px;
+  }
+
+  &__container {
+    @include breakpoint($lg) {
+      max-width: 350px;
+      margin-left: auto;
+    }
   }
 
   &__title {
     text-align: center;
     margin-bottom: 30px;
+
+    @include breakpoint($lg) {
+      text-align: left;
+    }
   }
 }
