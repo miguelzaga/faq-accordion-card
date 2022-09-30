@@ -9,6 +9,7 @@
   @include breakpoint($lg) {
     max-width: 920px;
     padding: 65px 95px 83px 0;
+    overflow: clip;
   }
 
   &__wrapper {
@@ -25,7 +26,6 @@
     margin: auto;
 
     &--desktop {
-      display: none;
     }
 
     @include breakpoint($lg) {
@@ -58,6 +58,7 @@
     max-width: 427px;
 
     &--desktop {
+      left: -86px;
     }
   }
 
