@@ -57,13 +57,13 @@ function App() {
               src={illustrationWomanDesktop}
               alt="Illustration of a woman using a computer"
             />
-            <img
-              className="card__illustration-box"
-              src={illustrationBoxDesktop}
-              alt="Illustration of a box"
-            />
           </picture>
         </div>
+        <img
+          className="card__illustration-box"
+          src={illustrationBoxDesktop}
+          alt="Illustration of a box"
+        />
         <div className="card__container">
           <h1 className="card__title">FAQ</h1>
           <ul className="card__list">
