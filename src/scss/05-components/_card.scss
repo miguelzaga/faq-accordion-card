@@ -48,7 +48,8 @@
     top: 108px;
 
     &--desktop {
-      top: 0;
+      top: -362px;
+      left: -576px;
     }
   }
 
@@ -59,13 +60,15 @@
 
     &--desktop {
       left: -86px;
+      max-width: 472px;
     }
   }
 
   &__illustration-box {
     position: absolute;
-    top: 0;
-    max-width: 90px;
+    top: 135px;
+    left: -85px;
+    max-width: 180px;
   }
 
   &__container {
